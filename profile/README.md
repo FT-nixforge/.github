@@ -6,7 +6,7 @@
 
 | Flake | Description |
 |-------|-------------|
-| [nixpalette](https://github.com/nixforge/nixpalette) | Theme management framework built on Stylix with live switching support |
+| [nixpalette](https://github.com/FT-nixforge/nixpalette) | Theme management framework built on Stylix with live switching support |
 | more coming soon… | |
 
 ## Philosophy
