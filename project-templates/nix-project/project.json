@@ -1,0 +1,87 @@
+{
+  "_comment": "GitHub Projects v2 template for general NixOS-compatible projects. Used by create-project.sh.",
+  "title": "{{PROJECT_NAME}}",
+  "description": "{{PROJECT_DESC}}",
+  "visibility": "PUBLIC",
+  "fields": [
+    {
+      "name": "Status",
+      "type": "SINGLE_SELECT",
+      "options": [
+        "📋 Backlog",
+        "🔜 Todo",
+        "🔄 In Progress",
+        "👀 Review",
+        "✅ Done",
+        "🚫 Blocked"
+      ],
+      "default": "📋 Backlog"
+    },
+    {
+      "name": "Priority",
+      "type": "SINGLE_SELECT",
+      "options": [
+        "🔴 Critical",
+        "🟠 High",
+        "🟡 Medium",
+        "🟢 Low"
+      ]
+    },
+    {
+      "name": "Type",
+      "type": "SINGLE_SELECT",
+      "options": [
+        "🐛 Bug",
+        "✨ Feature",
+        "♻️ Refactor",
+        "📝 Docs",
+        "🔧 Chore",
+        "🔬 Research",
+        "🔒 Security"
+      ]
+    },
+    {
+      "name": "Size",
+      "type": "SINGLE_SELECT",
+      "options": [
+        "XS (< 1h)",
+        "S (1–4h)",
+        "M (1–2d)",
+        "L (3–5d)",
+        "XL (> 1w)"
+      ]
+    },
+    {
+      "name": "Milestone",
+      "type": "TEXT"
+    }
+  ],
+  "views": [
+    {
+      "name": "Board",
+      "layout": "BOARD_LAYOUT",
+      "note": "Group by Status"
+    },
+    {
+      "name": "All Items",
+      "layout": "TABLE_LAYOUT",
+      "note": "Sort by Priority"
+    },
+    {
+      "name": "Roadmap",
+      "layout": "ROADMAP_LAYOUT",
+      "note": "Timeline view by Milestone"
+    },
+    {
+      "name": "Current Sprint",
+      "layout": "TABLE_LAYOUT",
+      "note": "Filter: Status = In Progress or Todo"
+    }
+  ],
+  "repo": {
+    "visibility": "public",
+    "topics": ["nix", "nixos"],
+    "has_issues": true,
+    "has_wiki": false
+  }
+}

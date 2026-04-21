@@ -1,0 +1,71 @@
+{
+  "_comment": "GitHub Projects v2 template for ft-nixpkgs flakes. Used by create-project.sh.",
+  "title": "{{FLAKE_NAME}}",
+  "description": "{{FLAKE_DESC}}",
+  "visibility": "PUBLIC",
+  "fields": [
+    {
+      "name": "Status",
+      "type": "SINGLE_SELECT",
+      "options": [
+        "📋 Backlog",
+        "🔜 Todo",
+        "🔄 In Progress",
+        "🧪 Testing",
+        "✅ Done",
+        "🚫 Blocked"
+      ],
+      "default": "📋 Backlog"
+    },
+    {
+      "name": "Priority",
+      "type": "SINGLE_SELECT",
+      "options": [
+        "🔴 High",
+        "🟡 Medium",
+        "🟢 Low"
+      ]
+    },
+    {
+      "name": "Type",
+      "type": "SINGLE_SELECT",
+      "options": [
+        "🐛 Bug",
+        "✨ Feature",
+        "♻️ Refactor",
+        "📝 Docs",
+        "🔧 Chore",
+        "🔬 Research"
+      ]
+    },
+    {
+      "name": "Nix Component",
+      "type": "SINGLE_SELECT",
+      "options": [
+        "packages",
+        "nixosModules",
+        "homeModules",
+        "lib",
+        "flake"
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "Board",
+      "layout": "BOARD_LAYOUT",
+      "note": "Group by Status"
+    },
+    {
+      "name": "All Issues",
+      "layout": "TABLE_LAYOUT",
+      "note": "Sort by Priority"
+    }
+  ],
+  "repo": {
+    "visibility": "public",
+    "topics": ["nix", "nixos", "flake", "ft-nixpkgs"],
+    "has_issues": true,
+    "has_wiki": false
+  }
+}
