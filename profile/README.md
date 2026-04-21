@@ -1,13 +1,11 @@
-# nixforge
+# FT-nixforge
 
-> A collection of NixOS flakes — system configs, theming, tooling, and desktop integrations.
+> A cohesive NixOS flake ecosystem — theming, tooling, and desktop integrations for real daily-driver setups.
 
-## Projects
+## Documentation
 
-| Flake | Description |
-|-------|-------------|
-| [nixpalette](https://github.com/FT-nixforge/nixpalette) | Theme management framework built on Stylix with live switching support |
-| more coming soon… | |
+All projects are documented at **[ft-nixforge.github.io/community](https://ft-nixforge.github.io/community/)** —
+installation guides, configuration options, examples, and more.
 
 ## Philosophy
 
@@ -17,4 +15,4 @@
 
 ## Contributing
 
-Contributions welcome. See individual flake repos for guidelines.
+Contributions welcome. See the [community repo](https://github.com/FT-nixforge/community) for guidelines and discussion.
